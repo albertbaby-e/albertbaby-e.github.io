@@ -357,6 +357,98 @@ footer .links a.up{transition:border-color .25s,transform .25s}footer .links a.u
 @media(max-width:640px){.toast{font-size:.82rem;padding:10px 14px 10px 10px}.toast em{width:30px;height:30px}.feat .pn{width:100px;left:8px}.pn{width:100px}}
 @media(prefers-reduced-motion:reduce){.js .rev{opacity:1;transform:none}.ide .ln,.ide .term,.toast{opacity:1;transform:none}#about .state .w{color:var(--ink)}}
 </style>
+<style id="mobile">
+/* ===== MOBILE / TABLET RESPONSIVE FIXES ===== */
+html,body{max-width:100%;overflow-x:clip}
+img,svg,iframe{max-width:100%}
+fieldset{min-width:0}
+/* grid children must be allowed to shrink, otherwise wide content (code, marquees, pills) pushes the page sideways */
+#home .cols>*,#about .grid>*,#contact .wrap>*,#why .card>*,.feat>*,.sgrid>*,.pgrid>*,.row>*,footer .loc>*{min-width:0}
+@media(max-width:1020px){
+  #home .cols,#about .grid,#contact .wrap,#why .card,.feat,footer .loc{grid-template-columns:minmax(0,1fr)}
+  .sgrid,.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stage{padding:28px 0}
+  .toast.t1{left:8px;bottom:0}.toast.t2{right:8px;top:0}
+  #tkSt{max-width:100%}
+}
+@media(max-width:640px){
+  .wrap{padding:0 18px}
+  .sgrid,.pgrid,#about .vals,#about .mv,.row,footer .loc{grid-template-columns:minmax(0,1fr)}
+  /* hero */
+  #home{padding-top:76px}
+  #home h1{font-size:clamp(2rem,9.5vw,2.6rem);margin:20px 0 18px}
+  #home .lead{font-size:1.02rem;margin-bottom:26px}
+  .kick{font-size:.8rem;padding:7px 14px 7px 10px}
+  #home .what a{font-size:.85rem;padding:8px 13px}
+  .ide pre{font-size:.72rem;line-height:1.8}
+  .ide .term{font-size:.74rem;padding:12px 16px}
+  .toast{max-width:80%;font-size:.8rem;padding:9px 12px 9px 9px;gap:10px}
+  .toast em{width:30px;height:30px}
+  .track span{font-size:.98rem;margin-right:36px}
+  #home .stack{margin-top:44px}
+  /* headings */
+  h2{font-size:clamp(1.7rem,7.6vw,2.1rem)}
+  #about .state{font-size:clamp(1.55rem,7vw,1.9rem);line-height:1.22;margin-bottom:48px}
+  .sub{font-size:1rem}
+  /* logos */
+  .lg{width:140px;height:68px;margin-right:12px;font-size:.95rem}
+  .tc{font-size:.88rem;padding:9px 16px}
+  /* about */
+  #about .grid{gap:44px}
+  #about .vis{padding:0 12px 74px 0;max-width:100%}
+  #about .badge{left:-2px;top:16px;padding:10px 12px}
+  #about .lcard{width:84%;padding:18px}
+  #about .story h3{font-size:1.5rem}
+  #about .nums{margin-top:60px}
+  #about .nums div{padding:22px 12px}
+  #about .nums b{font-size:2.2rem}
+  #about .nums span{font-size:.85rem}
+  #about .vh{margin:60px 0 24px}
+  /* services */
+  .gh{font-size:1.05rem;flex-wrap:wrap;gap:8px}
+  .sv{padding:24px 20px}
+  .ind{padding:20px 16px}.ind li{font-size:.86rem;padding:8px 12px}
+  .cta{padding:24px 18px}.cta h3{font-size:1.25rem}
+  .cta .acts,.cta .acts a,#svc .top .b1,.acts a{width:100%}
+  /* why */
+  #why{padding:56px 14px}
+  #why .card{padding:22px 16px 30px;gap:28px;border-radius:22px}
+  #tkSt{height:380px;border-radius:18px}
+  #why li{font-size:1rem;padding:12px 0}
+  /* work */
+  #work .top{gap:20px;margin-bottom:28px}
+  .tabs{display:grid;grid-template-columns:1fr 1fr;width:100%}
+  .tabs button{min-height:44px;padding:10px 6px;text-align:center}
+  .feat .tx{padding:26px 18px}.feat h3{font-size:1.4rem}
+  .feat .stage{min-height:240px;padding:0}
+  .feat .br{left:18px;right:-12px;top:36px}
+  .feat .pn,.pn{width:90px;left:8px;bottom:-30px}
+  /* contact */
+  #contact .wrap{gap:40px}
+  #contact .formcard{padding:24px 16px;border-radius:20px}
+  .formcard h3{font-size:1.35rem}
+  .f input[type=text],.f input[type=email],.f input[type=tel],.f select,.f textarea{font-size:16px}
+  .opts span{padding:10px 13px;font-size:.86rem}
+  .way{padding:14px;gap:12px}.way strong{font-size:.95rem}
+  .next li{padding:12px 12px 12px 54px}
+  /* footer */
+  footer{padding-top:36px}
+  footer .box{padding:18px;gap:14px}
+  footer .bar{flex-direction:column;align-items:flex-start;margin-top:36px;padding:24px 0}
+  footer .links{gap:16px;width:100%;justify-content:space-between}
+  footer .big{font-size:21vw}
+}
+@media(max-width:380px){
+  #home h1{font-size:1.85rem}
+  .ide pre{font-size:.66rem}
+  #about .nums{grid-template-columns:minmax(0,1fr)}
+  #about .nums div{border-right:0;border-bottom:1px solid var(--line)}
+}
+/* touch screens: no sticky hover lifts */
+@media(hover:none){
+  .sv:hover,.proj:hover,.way:hover,.box:hover,.ind li:hover,.lg:hover,#about .vals li:hover,#about .mv div:hover{transform:none!important}
+}
+</style>
 </head>
 <body id="top">
 
