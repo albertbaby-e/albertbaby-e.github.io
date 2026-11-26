@@ -449,6 +449,89 @@ fieldset{min-width:0}
   .sv:hover,.proj:hover,.way:hover,.box:hover,.ind li:hover,.lg:hover,#about .vals li:hover,#about .mv div:hover{transform:none!important}
 }
 </style>
+<style id="tight">
+/* ===== TIGHTER SPACING (all screens) + NICER MOBILE ARRANGEMENT ===== */
+.sec{padding:82px 0}
+h2{margin-bottom:10px}
+#logos .head{margin-bottom:28px}#logos h2{margin:16px 0 10px}#logos .tools{margin-top:28px}
+#home .stack{margin-top:64px;padding:22px 0 26px}
+#about .state{margin-bottom:56px}
+#about .nums{margin-top:64px}#about .vh{margin:64px 0 22px}
+#svc .top{margin-bottom:34px}.sgrid{margin-bottom:44px}.gh{margin-bottom:18px}
+#why{padding:70px 24px}
+#work .top{margin-bottom:30px}#work .cta{margin-top:44px}
+#contact .sub{margin-bottom:24px}.way{margin-bottom:10px}.hours{margin:14px 0 20px}
+footer{padding-top:44px}footer .bar{margin-top:40px;padding:24px 0}
+.ind{margin-bottom:18px}
+
+/* hero cards: sit below the code window instead of covering it */
+@media(max-width:1020px){
+  .stage{padding:0}
+  .toast,.toast.t1,.toast.t2{position:relative;left:auto;right:auto;top:auto;bottom:auto;display:flex;max-width:100%;margin-top:12px}
+  .toast.on{animation:none}
+}
+@media(max-width:640px){
+  .sec{padding:50px 0}
+  #home{padding-top:68px}
+  #home .acts{margin-bottom:24px}
+  #home .stack{margin-top:34px;padding:18px 0 22px}
+  #home .stack>p{margin-bottom:12px}
+  #home .cols{gap:34px}
+  #logos .head{margin-bottom:22px}#logos .tools{margin-top:22px}
+  h2{margin-bottom:8px}
+  .sub{line-height:1.6}
+  /* about */
+  #about .state{margin-bottom:34px}
+  #about .grid{gap:34px}
+  #about .vis{padding:0 10px 64px 0}
+  #about .story>p{margin-bottom:12px;line-height:1.7}
+  #about .mv{gap:10px;margin:20px 0 22px}
+  #about .mv div{padding:16px}
+  #about .acts{flex-direction:column;align-items:stretch;gap:16px}
+  #about .acts .lk{width:auto;align-self:center;border-bottom:2px solid var(--iris)}
+  #about .nums{grid-template-columns:1fr 1fr!important;gap:10px;border:0;margin-top:36px}
+  #about .nums div{border:1px solid var(--line)!important;border-radius:16px;background:var(--soft);padding:18px 14px}
+  #about .nums b{font-size:2rem;margin-bottom:6px}
+  #about .nums span{font-size:.82rem;line-height:1.45}
+  #about .vh{margin:40px 0 18px}
+  #about .vals{gap:10px}
+  #about .vals li{display:grid;grid-template-columns:44px 1fr;column-gap:14px;align-items:center;padding:16px}
+  #about .vals .ic{grid-row:1/3;margin:0;width:44px;height:44px}
+  #about .vals b{margin-bottom:2px;font-size:1rem}
+  #about .vals p{font-size:.88rem}
+  /* services */
+  #svc .top{gap:18px;margin-bottom:26px}
+  #svc .top .kick{margin-bottom:14px}
+  .sgrid{gap:12px;margin-bottom:30px}
+  .sv{padding:20px 18px}
+  .sv .ic{width:48px;height:48px;margin-bottom:14px}.sv .ic svg{width:22px;height:22px}
+  .sv h3{font-size:1.1rem;margin-bottom:6px}
+  .sv p{font-size:.92rem;line-height:1.6;margin-bottom:12px}
+  .sv .chips{margin-bottom:14px}
+  .gh{margin-bottom:14px}
+  .ind{gap:12px}
+  .cta{gap:16px}
+  /* why */
+  #why{padding:40px 12px}
+  #tkSt{height:340px}
+  #why h2{margin-bottom:16px}#why .b1{margin-top:22px}
+  /* work */
+  #work .top{gap:16px;margin-bottom:22px}
+  .pgrid{gap:22px}
+  .proj .meta{padding-top:14px}.proj p{margin-bottom:10px}.proj .chips{margin-bottom:12px}
+  .feat{margin-bottom:22px}
+  #work .cta{margin-top:34px}
+  /* contact */
+  #contact .wrap{gap:30px}
+  #contact .sub{margin-bottom:18px}
+  .f{margin-bottom:12px}
+  .hours{margin:12px 0 16px}
+  /* footer */
+  footer{padding-top:32px}
+  footer .loc{gap:12px}
+  footer .bar{margin-top:28px;padding:20px 0}
+}
+</style>
 </head>
 <body id="top">
 
@@ -499,7 +582,7 @@ fieldset{min-width:0}
   <div class="wrap"><div class="head">
     <span class="kick"><i></i>Platforms I work with</span>
     <h2 id="logos-title">Platforms and tools I build and market on</h2>
-    <p class="sub">From Google Search and Meta Ads to WordPress and WooCommerce, these are the platforms I use to build and grow websites.</p>
+    <p class="sub">The platforms I use to build and grow websites.</p>
   </div></div>
   <div class="mq rev"><div class="track" data-loop>
     <div class="lg">Google</div><div class="lg">Microsoft</div><div class="lg">Meta</div><div class="lg">Amazon</div><div class="lg">Shopify</div><div class="lg">WordPress</div><div class="lg">Adobe</div><div class="lg">Mailchimp</div>
